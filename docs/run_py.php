@@ -1,3 +1,3 @@
 <?php
-exec("python mypythonscript.py ".$name, $output);
+exec("python mypythonscript.py ".escapeshellarg($name), $output);
 ?>
